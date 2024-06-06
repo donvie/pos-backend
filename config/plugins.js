@@ -9,4 +9,13 @@ module.exports = () => ({
             }
         }
     },
+    upload: {
+      config: {
+        providerOptions: {
+          localServer: {
+            maxage: 300000, // Set max-age header for locally uploaded files
+          },
+        },
+      },
+    },
 });

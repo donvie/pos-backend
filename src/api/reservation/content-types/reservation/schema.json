@@ -18,9 +18,6 @@
     "breed": {
       "type": "string"
     },
-    "petAge": {
-      "type": "integer"
-    },
     "services": {
       "type": "string"
     },
@@ -36,6 +33,15 @@
       "type": "string"
     },
     "status": {
+      "type": "string"
+    },
+    "ownerName": {
+      "type": "string"
+    },
+    "petAge": {
+      "type": "string"
+    },
+    "ownerAddress": {
       "type": "string"
     }
   }

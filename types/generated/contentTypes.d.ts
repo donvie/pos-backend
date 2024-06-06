@@ -368,6 +368,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     singularName: 'product';
     pluralName: 'products';
     displayName: 'Product';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -379,6 +380,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     category: Attribute.String;
     quantity: Attribute.Integer;
     price: Attribute.Decimal;
+    image: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -411,7 +413,6 @@ export interface ApiReservationReservation extends Schema.CollectionType {
   attributes: {
     petType: Attribute.String;
     breed: Attribute.String;
-    petAge: Attribute.Integer;
     services: Attribute.String;
     user: Attribute.Relation<
       'api::reservation.reservation',
@@ -421,6 +422,9 @@ export interface ApiReservationReservation extends Schema.CollectionType {
     date: Attribute.String;
     time: Attribute.String;
     status: Attribute.String;
+    ownerName: Attribute.String;
+    petAge: Attribute.String;
+    ownerAddress: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -445,6 +449,7 @@ export interface ApiSaleSale extends Schema.CollectionType {
     singularName: 'sale';
     pluralName: 'sales';
     displayName: 'Sale';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -456,6 +461,8 @@ export interface ApiSaleSale extends Schema.CollectionType {
     category: Attribute.String;
     quantity: Attribute.Integer;
     price: Attribute.Float;
+    buy_quantity: Attribute.BigInteger;
+    image: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

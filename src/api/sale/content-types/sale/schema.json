@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sale",
     "pluralName": "sales",
-    "displayName": "Sale"
+    "displayName": "Sale",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,6 +29,12 @@
     },
     "price": {
       "type": "float"
+    },
+    "buy_quantity": {
+      "type": "biginteger"
+    },
+    "image": {
+      "type": "string"
     }
   }
 }
