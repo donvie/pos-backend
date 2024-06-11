@@ -43,6 +43,12 @@
     },
     "ownerAddress": {
       "type": "string"
+    },
+    "petName": {
+      "type": "string"
+    },
+    "isViewed": {
+      "type": "boolean"
     }
   }
 }

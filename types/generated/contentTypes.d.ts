@@ -381,6 +381,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     quantity: Attribute.Integer;
     price: Attribute.Decimal;
     image: Attribute.String;
+    dateExpiry: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -425,6 +426,8 @@ export interface ApiReservationReservation extends Schema.CollectionType {
     ownerName: Attribute.String;
     petAge: Attribute.String;
     ownerAddress: Attribute.String;
+    petName: Attribute.String;
+    isViewed: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -884,8 +887,15 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
     type: Attribute.String;
     phoneNumber: Attribute.String;
     address: Attribute.String;
-    name: Attribute.String;
     gender: Attribute.String;
+    firstName: Attribute.String;
+    middleName: Attribute.String;
+    lastName: Attribute.String;
+    suffixName: Attribute.String;
+    region: Attribute.String;
+    province: Attribute.String;
+    cityMunicipality: Attribute.String;
+    barangay: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

@@ -74,10 +74,31 @@
     "address": {
       "type": "string"
     },
-    "name": {
+    "gender": {
       "type": "string"
     },
-    "gender": {
+    "firstName": {
+      "type": "string"
+    },
+    "middleName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "suffixName": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "cityMunicipality": {
+      "type": "string"
+    },
+    "barangay": {
       "type": "string"
     }
   }

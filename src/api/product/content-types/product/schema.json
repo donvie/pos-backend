@@ -32,6 +32,9 @@
     },
     "image": {
       "type": "string"
+    },
+    "dateExpiry": {
+      "type": "string"
     }
   }
 }
