@@ -35,6 +35,9 @@
     },
     "image": {
       "type": "string"
+    },
+    "status": {
+      "type": "string"
     }
   }
 }
